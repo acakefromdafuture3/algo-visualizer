@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithm Visualizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Left Panel -->
+    <div class="panel">
+        <h2>Input</h2>
+
+        <label>Algorithm:</label>
+        <select id="algorithm">
+            <option value="bubble">Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="merge">Merge Sort</option>
+            <option value="linear">Linear Search</option>
+            <option value="binary">Binary Search</option>
+        </select>
+
+        <label>Enter values (comma separated):</label>
+        <input type="text" id="values" placeholder="e.g. 5,3,8,1">
+
+        <!-- ⭐ Target Input (hidden by default) -->
+        <label id="targetLabel" style="display:none; margin-top:10px;">Enter target value:</label>
+        <input type="number" id="targetInput" style="display:none;" placeholder="e.g. 8">
+
+        <button onclick="sendData()">Visualize</button>
+
+        <label style="margin-top:20px; display:block;">Speed:</label>
+        <input type="range" id="speedSlider" min="50" max="1000" value="500">
+        <p id="speedValue">Speed: 500 ms</p>
+
+        <button id="pausePlayBtn" onclick="togglePause()" style="margin-top:15px;">
+            Pause
+        </button>
+    </div>
+
+    <!-- Center Visualization Area -->
+    <div class="visual-area">
+        <h2>Visualization</h2>
+
+        <!-- Normal Bars -->
+        <div id="bars"></div>
+
+        <!-- Merge Sort Visualgo Style -->
+        <div id="mergeVisualgo" style="display:none;">
+
+            <div class="merge-title">Main Array</div>
+            <div id="mainRow" class="merge-row"></div>
+
+            <div class="merge-title">Left Half</div>
+            <div id="leftRow" class="merge-row"></div>
+
+            <div class="merge-title">Right Half</div>
+            <div id="rightRow" class="merge-row"></div>
+
+            <div class="merge-title">Merged Output</div>
+            <div id="mergeRow" class="merge-row"></div>
+
+        </div>
+            <div id="legendBox" class="legend">
+            <div><span class="legend-color normal"></span> Normal</div>
+            <div><span class="legend-color compare"></span> Comparing</div>
+            <div><span class="legend-color key"></span> Key Element</div>
+            <div><span class="legend-color sorted"></span> Sorted / Found</div>
+            <div><span class="legend-color notfound"></span> Not Found</div>
+        </div>
+
+    </div>
+
+    <!-- Right Panel -->
+    <div class="panel">
+        <div id="complexityBox" style="margin-bottom:15px;">
+            <h3>Time Complexity</h3>
+            <p><b>Best:</b> <span id="bestCase">-</span></p>
+            <p><b>Average:</b> <span id="avgCase">-</span></p>
+            <p><b>Worst:</b> <span id="worstCase">-</span></p>
+        </div>
+
+        <h2>Live Explanation</h2>
+        <div id="stepCounter" style="margin-bottom:10px; font-weight:bold;">
+            Step 0 / 0
+        </div>
+        <div id="stepInfo" style="line-height:1.6; font-size:15px;">
+            Waiting for input...
+        </div>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
