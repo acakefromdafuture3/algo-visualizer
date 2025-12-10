@@ -1,6 +1,6 @@
 <!-- Banner -->
 <p align="center">
-  <img src="banner.png" alt="Algorithm Visualizer Banner" width="100%" />
+  <img src="Algorithm-Visualizer/banner.png" alt="Algorithm Visualizer Banner" width="100%" />
 </p>
 
 <div align="center">
