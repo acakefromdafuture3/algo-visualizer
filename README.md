@@ -1,198 +1,160 @@
 <!-- Banner -->
 <p align="center">
-  <img src="Algorithm-Visualizer/banner.png" alt="Algorithm Visualizer Banner" width="100%" />
+  <img src="Algorithm-Visualizer/banner.png" alt="Algorithm Visualizer Banner" width="800" />
 </p>
 
-<div align="center">
-  <h1>🧠 Algorithm Visualizer <span style="font-size:0.7em;">v1.0</span></h1>
-  <p><em>Sorting &amp; Searching brought to life with clean visuals and smooth animations.</em></p>
+<!-- Title & Subtitle -->
+<h1 align="center">🧠 Algorithm Visualizer v1.0</h1>
 
-  <p>
-    <img src="https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge" />
-    <img src="https://img.shields.io/badge/Flask-Backend-green?style=for-the-badge" />
-    <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JS-orange?style=for-the-badge" />
-  </p>
-</div>
+<p align="center">
+  <b>Sorting &amp; Searching brought to life with animations, colors &amp; step-by-step explanations.</b><br/>
+  Built using <b>Python</b> + <b>Flask</b> + <b>HTML / CSS / JS</b>.
+</p>
 
-<hr />
+<!-- Badges -->
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3.9%2B-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Flask-Backend-green?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JS-orange?style=for-the-badge" />
+</p>
+
+<hr/>
 
 <h2>✨ Overview</h2>
+
 <p>
-This project is a visual playground for understanding classic
-<strong>sorting</strong> and <strong>searching</strong> algorithms.
-It shows how data moves, compares, shifts and settles into order —
-step by step, with animations and explanations.
+This project is an <b>interactive visual playground</b> for understanding classic
+<b>sorting</b> and <b>searching</b> algorithms.
+Every step is shown visually — comparisons, swaps, splits, merges, found / not-found, etc.
 </p>
 
-<hr />
+<p>
+The goal is to make algorithms:
+</p>
+<ul>
+  <li>📚 <b>Easier to learn</b></li>
+  <li>🎨 More <b>beautiful</b> to watch</li>
+  <li>🧠 More <b>intuitive</b> to understand</li>
+</ul>
+
+<hr/>
 
 <h2>🚀 Features (v1.0)</h2>
 
-<h3>🟦 Sorting Algorithms</h3>
+<h3>🔷 Sorting Algorithms</h3>
 <ul>
-  <li><strong>Bubble Sort</strong></li>
-  <li><strong>Selection Sort</strong></li>
-  <li><strong>Insertion Sort</strong></li>
-  <li><strong>Merge Sort</strong> (Visualgo-style splitting &amp; merging)</li>
+  <li>Bubble Sort</li>
+  <li>Selection Sort</li>
+  <li>Insertion Sort</li>
+  <li>Merge Sort (Visualgo-style visualization)</li>
 </ul>
 
-<table>
-  <thead>
-    <tr>
-      <th>Algorithm</th>
-      <th>Best</th>
-      <th>Average</th>
-      <th>Worst</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Bubble Sort</td>
-      <td>O(n)</td>
-      <td>O(n²)</td>
-      <td>O(n²)</td>
-    </tr>
-    <tr>
-      <td>Selection Sort</td>
-      <td>O(n²)</td>
-      <td>O(n²)</td>
-      <td>O(n²)</td>
-    </tr>
-    <tr>
-      <td>Insertion Sort</td>
-      <td>O(n)</td>
-      <td>O(n²)</td>
-      <td>O(n²)</td>
-    </tr>
-    <tr>
-      <td>Merge Sort</td>
-      <td>O(n log n)</td>
-      <td>O(n log n)</td>
-      <td>O(n log n)</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3>🟩 Searching Algorithms</h3>
+<h3>🔍 Searching Algorithms</h3>
 <ul>
-  <li><strong>Linear Search</strong>
-    <ul>
-      <li>Checks one index at a time</li>
-      <li>Highlights the current index being inspected</li>
-      <li>Clear found / not-found feedback</li>
-    </ul>
-  </li>
-
-  <li><strong>Binary Search</strong>
-    <ul>
-      <li>Highlights <code>low</code>, <code>mid</code> and <code>high</code></li>
-      <li>Visually shrinks the active search range</li>
-      <li>Green highlight when found, red pattern when not found</li>
-    </ul>
-  </li>
+  <li>Linear Search (step-by-step highlighting)</li>
+  <li>Binary Search (mid-pointer &amp; range visualization)</li>
 </ul>
 
-<h3>🎛 UI &amp; Controls</h3>
+<h3>🎛 Extra Goodies</h3>
 <ul>
-  <li>Dark-themed modern layout</li>
-  <li>Speed slider for animation (50ms – 1000ms)</li>
-  <li>Pause / Play button</li>
-  <li>Live explanation panel for each step</li>
-  <li>Time complexity box (Best / Avg / Worst)</li>
-  <li>Step counter (current step / total steps)</li>
-  <li>Color legend for states (normal, compare, key, sorted, not-found)</li>
+  <li>Adjustable speed slider</li>
+  <li>Pause &amp; Play control</li>
+  <li>Step-by-step live explanation panel</li>
+  <li>Colored bars / blocks for states</li>
+  <li>Step counter</li>
+  <li>Responsive layout</li>
 </ul>
 
-<hr />
+<hr/>
 
-<h2>🧩 Visualization Details</h2>
+<h2>🎨 Color Legend</h2>
 
-<h3>🎨 Color Legend</h3>
 <ul>
-  <li><span style="background:cyan;padding:3px 10px;border-radius:4px;display:inline-block;margin-right:6px;"></span> Normal element</li>
-  <li><span style="background:yellow;padding:3px 10px;border-radius:4px;display:inline-block;margin-right:6px;"></span> Comparing elements</li>
-  <li><span style="background:purple;padding:3px 10px;border-radius:4px;display:inline-block;margin-right:6px;"></span> Key element (Insertion Sort)</li>
-  <li><span style="background:#22c55e;padding:3px 10px;border-radius:4px;display:inline-block;margin-right:6px;"></span> Sorted / Found</li>
-  <li><span style="background:red;padding:3px 10px;border-radius:4px;display:inline-block;margin-right:6px;"></span> Not Found (search failure)</li>
+  <li>🟦 <b>Normal element</b></li>
+  <li>🟨 <b>Comparing elements</b></li>
+  <li>🟪 <b>Key element</b> (Insertion Sort)</li>
+  <li>🟩 <b>Sorted / Found</b></li>
+  <li>🟥 <b>Not Found</b> (search failure)</li>
 </ul>
 
-<h3>🧵 Merge Sort View</h3>
-<ul>
-  <li>Top row → <strong>Main array</strong></li>
-  <li>Middle rows → <strong>Left half</strong> &amp; <strong>Right half</strong></li>
-  <li>Bottom row → <strong>Merged output</strong></li>
-  <li>Each split, compare and merge step is visualized individually</li>
-</ul>
 
-<h3>📡 Binary Search View</h3>
-<ul>
-  <li>Highlights current <strong>search range</strong></li>
-  <li>Mid index is emphasized each step</li>
-  <li>Search space shrinks visually until value is found or exhausted</li>
-</ul>
 
-<hr />
 
-<h2>🛠 Tech Stack</h2>
-<ul>
-  <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
-  <li><strong>Backend:</strong> Python, Flask</li>
-</ul>
+
+<hr/>
+
+<h2>📂 Project Structure</h2>
 
 <pre>
-algorithm-visualizer/
-│
-├── app.py
-├── templates/
-│   └── index.html
-├── static/
+algo-visualizer/
+│── static/
 │   ├── styles.css
-│   └── script.js
-└── algorithms/
-    ├── sorting.py
-    └── searching.py
+│   ├── script.js
+│── templates/
+│   ├── index.html
+│── algorithms/
+│   ├── sorting.py
+│   ├── searching.py
+│── app.py
+│── README.md
 </pre>
 
-<hr />
+<hr/>
 
-<h2>📦 Getting Started</h2>
+<h2>🛠 Installation &amp; Setup</h2>
 
 <h3>1️⃣ Clone the repository</h3>
+
 <pre>
-git clone https://github.com/&lt;your-username&gt;/algorithm-visualizer.git
-cd algorithm-visualizer
+git clone https://github.com/acakefromdafuture3/algo-visualizer.git
+cd algo-visualizer
 </pre>
 
 <h3>2️⃣ Install dependencies</h3>
+
 <pre>
 pip install flask
 </pre>
 
-<h3>3️⃣ Run the app</h3>
+<h3>3️⃣ Run the server</h3>
+
 <pre>
 python app.py
 </pre>
 
 <h3>4️⃣ Open in browser</h3>
+
 <pre>
-http://127.0.0.1:5000/
+http://127.0.0.1:5000
 </pre>
 
-<hr />
+<hr/>
 
-<h2>🌟 Roadmap (v2.0)</h2>
+<h2>🌟 What's Next (v2.0 Ideas)</h2>
+
 <ul>
-  <li>Quick Sort &amp; Heap Sort visualizations</li>
-  <li>Side-by-side algorithm comparison mode</li>
-  <li>Operation counters (comparisons, swaps, shifts)</li>
-  <li>Downloadable GIF or video of a run</li>
-  <li>Improved mobile responsiveness</li>
+  <li>QuickSort &amp; HeapSort visualizations</li>
+  <li>Side-by-side algorithm comparison</li>
+  <li>Time &amp; operations comparison dashboard</li>
+  <li>Random / nearly-sorted / reversed array generator</li>
+  <li>Theme selector (light / dark / hacker mode 😎)</li>
 </ul>
 
-<hr />
+<hr/>
 
-<h2>💙 Author</h2>
+<h2>🤝 Contributing</h2>
+
 <p>
-<strong>Rik</strong><br/>
-Aspiring engineer crafting tools that make logic visible, simple, and a little bit magical.
+Pull requests are welcome! If you have ideas for animations, UI improvements, or new algorithms,
+feel free to open an issue or a PR.
+</p>
+
+<hr/>
+
+<h2>⭐ Support</h2>
+
+<p>
+If you like this project, consider giving it a <b>⭐ star</b> on GitHub —
+it really means a lot!
 </p>
