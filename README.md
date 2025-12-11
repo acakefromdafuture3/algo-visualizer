@@ -14,7 +14,7 @@
 <!-- Badges -->
 <p align="center">
   <img src="https://img.shields.io/badge/Version-1.0-blue?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Python-3.9%2B-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Python-3.14%2B-yellow?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Flask-Backend-green?style=for-the-badge" />
   <img src="https://img.shields.io/badge/Frontend-HTML%20%7C%20CSS%20%7C%20JS-orange?style=for-the-badge" />
 </p>
